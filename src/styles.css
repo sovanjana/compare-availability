@@ -1,0 +1,44 @@
+.app {
+  font-family: sans-serif;
+  text-align: center;
+}
+.comparison {
+  background-color: white;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+}
+.slot-row {
+  flex: 1;
+  display: flex;
+}
+.slot-row:not(:last-child) {
+  border-bottom: 1px solid;
+}
+.slot-row > .slot-label {
+  display: flex;
+  align-items: flex-end;
+  border-right: 1px solid;
+  padding: 0 4px;
+}
+.compare-with {
+  flex: 1;
+  position: relative;
+  display: flex;
+}
+.compare-with:not(:last-child) {
+  border-right: 1px solid;
+}
+.compare-with > span.is-available {
+  position: absolute;
+  left: 0;
+  width: 16px;
+  top: 0;
+  bottom: 0;
+}
+.slot-inner-wrapper {
+  flex: 1;
+  padding-left: 16px;
+}
